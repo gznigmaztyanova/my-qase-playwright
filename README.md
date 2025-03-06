@@ -18,18 +18,18 @@ It is based on our actual project structure but **all logic and sensitive data h
 
 ## 🚀 Getting Started
 
-### **1. Clone the Repository**
+### 1. Clone the Repository
 ```sh
 git clone https://github.com/gznigmaztyanova/my-qase-playwright.git
 cd my-qase-playwright
 ```
 
-### **2. Install Dependencies**
+### 2. Install Dependencies
 `npm install`
 
-### **3. Configure Environment Variables**
+### 3. Configure Environment Variables
 Add QASE_TOKEN="token" to .env
 
-### **4. Run Playwright Tests
+### 4. Run Playwright Tests
 `npx playwright test`
 
