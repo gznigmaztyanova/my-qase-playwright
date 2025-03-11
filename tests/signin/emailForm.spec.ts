@@ -1,10 +1,6 @@
-import { expect, test } from "@playwright/test";
+import { test } from "../fixtures/index.js";
+import { expect } from "@playwright/test";
 import { qase } from "playwright-qase-reporter";
-
-test.beforeEach(async ({ }, testInfo) => {
-  console.log("browserName", testInfo.project.name);
-qase.parameters({ Browser: testInfo.project.name });
-});
 
 test.describe("Signin page > Email form", () => {
   test.beforeEach(async () => {
@@ -36,11 +32,11 @@ test.describe("Signin page > Email form", () => {
 
   test.describe("Successful signin", () => {
     test(
-      qase(102, "Display the “Password form” when submitting the form with a non-existing email"), async () => {
+      qase(102, "Display the \"Password form\" when submitting the form with a non-existing email"), async () => {
         expect(true).toBe(true);
       });
     test(
-      qase(103, "Display the “Password form” when csubmitting the form with a valid email"), async () => {
+      qase(103, "Display the \"Password form\" when csubmitting the form with a valid email"), async () => {
         expect(true).toBe(true);
       });
   });
