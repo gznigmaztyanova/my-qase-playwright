@@ -1,6 +1,11 @@
 import { expect, test } from "@playwright/test";
 import { qase } from "playwright-qase-reporter";
 
+test.beforeEach(async ({ }, testInfo) => {
+  console.log("browserName", testInfo.project.name);
+qase.parameters({ Browser: testInfo.project.name });
+});
+
 test.describe("Signin page > Email form", () => {
   test.beforeEach(async () => {
     expect(true).toBe(true);

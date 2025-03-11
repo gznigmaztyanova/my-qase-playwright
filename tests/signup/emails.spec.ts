@@ -1,6 +1,11 @@
 import { expect, test } from "@playwright/test";
 import { qase } from "playwright-qase-reporter";
 
+test.beforeEach(async ({ }, testInfo) => {
+    console.log("browserName", testInfo.project.name);
+    qase.parameters({ Browser: testInfo.project.name });
+});
+
 test.describe("Signup page > Emails", () => {
     test.slow();
     const expectedSignUpSubject = "Continue signing up for Stork Club";

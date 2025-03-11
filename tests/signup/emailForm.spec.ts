@@ -1,6 +1,10 @@
 import { expect, test } from "@playwright/test";
 import { qase } from "playwright-qase-reporter";
 
+test.beforeEach(async ({ }, testInfo) => {
+  console.log("browserName", testInfo.project.name);
+qase.parameters({ Browser: testInfo.project.name });
+});
 
 test.describe("Signup page > Email form", () => {
   test.beforeEach(async () => {
