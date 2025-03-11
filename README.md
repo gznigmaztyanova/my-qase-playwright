@@ -15,12 +15,12 @@ It is based on our actual project structure but **all logic and sensitive data h
 Running tests only with 1 project (ex., Desktop Chrome)
   1. Run tests only for from 1 file (ex., emailForm.spec.ts):
     `npx playwright test tests/signin/emailForm.spec.ts`
-    - I expect to see test run with 4 results, all results have the "Desktop Chrome" param
-    - I will see [Test Run](https://app.qase.io/public/report/1ce5e1afa6abe3e415eee39d6abfb87072782ef0) with 4 results (ids: 100, 101, 102, 103), all results have the "Desktop Chrome" param 
-  2. Run tests only for the whole suite:
+      - I expect to see test run with 4 results, all results have the "Desktop Chrome" param
+      - I will see [Test Run](https://app.qase.io/public/report/1ce5e1afa6abe3e415eee39d6abfb87072782ef0) with 4 results (ids: 100, 101, 102, 103), all results have the "Desktop Chrome" param 
+  2. Run tests only for the whole suite:  
     `npx playwright test`
-    - I expect to see test run with 30 results, 30 results have the "Desktop Chrome" param
-    - I will see [Test Run](https://app.qase.io/public/report/de0d3defeda1d8f00493b84aa1ce4cb1997aaa0d) with 30 results, but not all of them have the "Desktop Chrome" param, the same test cases (ids: 100, 101, 102, 103) that previously had the parameter are now displayed without it.
+      - I expect to see test run with 30 results, 30 results have the "Desktop Chrome" param
+      - I will see [Test Run](https://app.qase.io/public/report/de0d3defeda1d8f00493b84aa1ce4cb1997aaa0d) with 30 results, but not all of them have the "Desktop Chrome" param, the same test cases (ids: 100, 101, 102, 103) that previously had the parameter are now displayed without it.
 
 ## 📌 Project Overview
 - **Stack**: TypeScript + Playwright
